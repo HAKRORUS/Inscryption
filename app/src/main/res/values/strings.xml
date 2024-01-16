@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Inscryption</string>
+    <string name="hello">Очередной Соискатель, Добро пожаловать в INSCRYPTION.</string>
+    <string name="hint">INSCRYPTION - это игра с линейным сюжетом и пошаговыми боями с монстрами.</string>
+    <string name="start">Новое приключение</string>
+    <string name="Name">Я не расслышал твоё имя.</string>
+    <string name="Class">Выбери класс за который будешь играть.</string>
+    <string name="Wizard">Маг, заточен под магические битвы. Уязвим к физическому урону.</string>
+    <string name="WizardAbout">Гуу. Он был превращен в зеленую биомассу своим учителем очень давно, с тех пор пытается доказать ему что он способный ученик.</string>
+    <string name="Robot">Робот, использует силу технологий в бою. Не признаёт магию.</string>
+    <string name="RobotAbout">Дредгер. Последние 100 лет работал на свалке распределителем мусора, решил пойти против системы.</string>
+    <string name="Sceleton">Не упокоенная душа. Может использовать как меч, так и заклинания.</string>
+    <string name="SceletonAbout">Кейси Хоббс (1970–1992). Умер от упашвего льда, дефибриллятор не помог. Пытается найти убийцу.</string>
+    <string name="backpackTips">Нажми на меня и сможешь посмотреть мой рюкзак.</string>
+    <string name="hiBackpack">если тебе нужно не умереть в битве используй их..</string>
+</resources>
