@@ -13,13 +13,18 @@ import android.widget.Toast;
 
 public class HiMainActivity extends AppCompatActivity {
     ImageButton backpackTipImageButton;
+    Hero hero2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hi_main);
+
+        hero2 = (Hero) getIntent().getSerializableExtra("hero");
+
         backpackTipImageButton = findViewById(R.id.backpackTipImageButton);
-        switch (getIntent().getIntExtra("Hero",0)) {
+
+        switch (hero2.getNumberOfHero()) {
             case 1:
                 backpackTipImageButton.setImageResource(R.drawable.robot);
                 break;
@@ -34,7 +39,14 @@ public class HiMainActivity extends AppCompatActivity {
 
     public void backpackTip(View view) {
         Intent intent = new Intent(this, BackpackActivity.class);
-        intent.putExtra("hi",true);
+        hero2.setHi(true);
+        intent.putExtra("hero", hero2);
+        startActivity(intent);
+    }
+
+    public void start(View view) {
+        Intent intent = new Intent(this, TransActivity.class);
+        intent.putExtra("hero", hero2);
         startActivity(intent);
     }
 }

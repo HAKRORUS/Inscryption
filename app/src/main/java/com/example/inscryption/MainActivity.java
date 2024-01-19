@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
         nameEditText = findViewById(R.id.nameEditText);
 
-        hero = new Hero();
     }
 
     public void start(View view) {
@@ -33,7 +32,9 @@ public class MainActivity extends AppCompatActivity {
             mediaPlayer2.start();
         } else {
             Intent intent = new Intent(this,HeroActivity.class);
-            hero.setNamedafgfg(nameEditText.getText().toString());
+            hero = new Hero();
+            hero.setName(nameEditText.getText().toString());
+            intent.putExtra("hero", hero);
             startActivity(intent);
         }
     }

@@ -5,12 +5,29 @@
     <string name="start">Новое приключение</string>
     <string name="Name">Я не расслышал твоё имя.</string>
     <string name="Class">Выбери класс за который будешь играть.</string>
+
     <string name="Wizard">Маг, заточен под магические битвы. Уязвим к физическому урону.</string>
     <string name="WizardAbout">Гуу. Он был превращен в зеленую биомассу своим учителем очень давно, с тех пор пытается доказать ему что он способный ученик.</string>
+    <string name="WizardStats">Здоровье: 100; Ближн. атака: 15; Маг. атака: 30; Физ. броня: -20% от урона; Маг. броня: -50% от урона.</string>
+
     <string name="Robot">Робот, использует силу технологий в бою. Не признаёт магию.</string>
     <string name="RobotAbout">Дредгер. Последние 100 лет работал на свалке распределителем мусора, решил пойти против системы.</string>
+    <string name="RobotStats">Здоровье: 100; Ближн. атака: 30; Маг. атака: 15; Физ. броня: -50% от урона; Маг. броня: -20% от урона.</string>
+
     <string name="Sceleton">Не упокоенная душа. Может использовать как меч, так и заклинания.</string>
     <string name="SceletonAbout">Кейси Хоббс (1970–1992). Умер от упашвего льда, дефибриллятор не помог. Пытается найти убийцу.</string>
+    <string name="SceletonStats">Здоровье: 100; Ближн. атака: 20; Маг. атака: 20; Физ. броня: -30% от урона; Маг. броня: -30% от урона.</string>
+
+    <string name="enemyWizard">Ты шел по тропе и наткнулся на этого мага, что будешь делать?</string>
+
     <string name="backpackTips">Нажми на меня и сможешь посмотреть мой рюкзак.</string>
     <string name="hiBackpack">если тебе нужно не умереть в битве используй их..</string>
+    <string name="transText">Это переходная локация, держи это зелье.</string>
+    <string name="toFight">В бой.</string>
+    <string name="chooseAtack">Выбери тип атаки.</string>
+    <string name="choosenPhysikcAtack">Ты выбрал физ. атаку она нанесет: </string>
+    <string name="choosenMagickAtack">Ты выбрал маг. атаку она нанесет: </string>
+    <string name="chooseArmor">Выбери тип защиты.</string>
+    <string name="choosenPhysickArmor">Ты выбрал физ. защиту она спасет от: </string>
+    <string name="choosenMagickArmor">Ты выбрал маг. защиту она спасет от: </string>
 </resources>

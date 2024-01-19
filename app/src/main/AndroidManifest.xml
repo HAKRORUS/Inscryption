@@ -13,12 +13,21 @@
         android:theme="@style/Theme.Inscryption"
         tools:targetApi="31">
         <activity
-            android:name=".BackpackActivity"
+            android:name=".AtackAndArmorActivity"
+            android:screenOrientation="landscape"
+            android:exported="false" />
+        <activity
+            android:name=".FightActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".SceletonBackpackActivity"
-            android:exported="false" />
+            android:name=".TransActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BackpackActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".HiMainActivity"
             android:exported="false"
