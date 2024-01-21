@@ -152,8 +152,8 @@ public class FightActivity extends AppCompatActivity {
                     infoFightTextView.append("Вы нанесли врагу: " + (int)(hero5.getPhysickAtack() - (double)hero5.getPhysickAtack() * ((double)enemy.getPhysickArmor() / 100)));
                     enemy.setHealth(enemy.getHealth() - (int)(hero5.getPhysickAtack() - (double)hero5.getPhysickAtack() * ((double)enemy.getPhysickArmor() / 100)));
                 } else  if (hero5.getAttack() == 2){
-                    infoFightTextView.append("Вы нанесли врагу: " + hero5.getPhysickAtack());
-                    enemy.setHealth(enemy.getHealth() - hero5.getPhysickAtack());
+                    infoFightTextView.append("Вы нанесли врагу: " + hero5.getMagickAtack());
+                    enemy.setHealth(enemy.getHealth() - hero5.getMagickArmor());
                 }
                 break;
             case 2:
@@ -161,8 +161,8 @@ public class FightActivity extends AppCompatActivity {
                     infoFightTextView.append("Вы нанесли врагу: " + (int)(hero5.getMagickAtack() - (double)hero5.getMagickAtack() * ((double)enemy.getMagickArmor() / 100)));
                     enemy.setHealth(enemy.getHealth() - (int)(hero5.getMagickAtack() - (double)hero5.getMagickAtack() * ((double)enemy.getMagickArmor() / 100)));
                 } else if (hero5.getAttack() == 1){
-                    infoFightTextView.append("Вы нанесли врагу: " + hero5.getMagickAtack());
-                    enemy.setHealth(enemy.getHealth() - hero5.getMagickAtack());
+                    infoFightTextView.append("Вы нанесли врагу: " + hero5.getPhysickAtack());
+                    enemy.setHealth(enemy.getHealth() - hero5.getPhysickAtack());
                 }
                 break;
         }
