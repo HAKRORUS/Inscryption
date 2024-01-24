@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 public class FightActivity extends AppCompatActivity {
@@ -19,6 +20,7 @@ public class FightActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fight);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         hero5 = (Hero) getIntent().getSerializableExtra("hero");
 
@@ -129,19 +131,19 @@ public class FightActivity extends AppCompatActivity {
         switch ((int)(Math.random()*2+1)) {
             case 1:
                 if (hero5.getArmor() == 1) {
-                    infoFightTextView.setText("Враг нанес вам: " + (int)(enemy.getPhysickAtack() - ((double)enemy.getPhysickAtack() * ((double)hero5.getPhysickArmor() / 100))) + "; ");
+                    infoFightTextView.setText("Враг нанес вам: " + (int)(enemy.getPhysickAtack() - ((double)enemy.getPhysickAtack() * ((double)hero5.getPhysickArmor() / 100))) + " физ. урона; ");
                     hero5.setHealth(hero5.getHealth()- (int)(enemy.getPhysickAtack() - ((double)enemy.getPhysickAtack() * ((double)hero5.getPhysickArmor() / 100))));
                 } else {
-                    infoFightTextView.setText("Враг нанес вам: " + enemy.getPhysickAtack() + "; ");
+                    infoFightTextView.setText("Враг нанес вам: " + enemy.getPhysickAtack() + " физ. урона; ");
                     hero5.setHealth(hero5.getHealth() - enemy.getPhysickAtack());
                 }
                 break;
             case 2:
                 if (hero5.getArmor() == 2) {
-                    infoFightTextView.setText("Враг нанес вам: " + (int)(enemy.getMagickAtack() - ((double)enemy.getMagickAtack() * ((double)hero5.getMagickArmor() / 100))) + "; ");
+                    infoFightTextView.setText("Враг нанес вам: " + (int)(enemy.getMagickAtack() - ((double)enemy.getMagickAtack() * ((double)hero5.getMagickArmor() / 100))) + " маг. урона; ");
                     hero5.setHealth(hero5.getHealth()-(int)(enemy.getMagickAtack() - ((double)enemy.getMagickAtack() * ((double)hero5.getMagickArmor() / 100))));
                 } else {
-                    infoFightTextView.setText("Враг нанес вам: " + enemy.getMagickAtack() + "; ");
+                    infoFightTextView.setText("Враг нанес вам: " + enemy.getMagickAtack() + " маг. урона; ");
                     hero5.setHealth(hero5.getHealth() - enemy.getMagickAtack());
                 }
                 break;
@@ -149,19 +151,19 @@ public class FightActivity extends AppCompatActivity {
         switch ((int)(Math.random()*2+1)) {
             case 1:
                 if (hero5.getAttack() == 1) {
-                    infoFightTextView.append("Вы нанесли врагу: " + (int)(hero5.getPhysickAtack() - (double)hero5.getPhysickAtack() * ((double)enemy.getPhysickArmor() / 100)));
+                    infoFightTextView.append("Вы нанесли врагу: " + (int)(hero5.getPhysickAtack() - (double)hero5.getPhysickAtack() * ((double)enemy.getPhysickArmor() / 100)) + " физ. урона.");
                     enemy.setHealth(enemy.getHealth() - (int)(hero5.getPhysickAtack() - (double)hero5.getPhysickAtack() * ((double)enemy.getPhysickArmor() / 100)));
                 } else  if (hero5.getAttack() == 2){
-                    infoFightTextView.append("Вы нанесли врагу: " + hero5.getMagickAtack());
+                    infoFightTextView.append("Вы нанесли врагу: " + hero5.getMagickAtack() + " маг. урона.");
                     enemy.setHealth(enemy.getHealth() - hero5.getMagickArmor());
                 }
                 break;
             case 2:
                 if (hero5.getAttack() == 2) {
-                    infoFightTextView.append("Вы нанесли врагу: " + (int)(hero5.getMagickAtack() - (double)hero5.getMagickAtack() * ((double)enemy.getMagickArmor() / 100)));
+                    infoFightTextView.append("Вы нанесли врагу: " + (int)(hero5.getMagickAtack() - (double)hero5.getMagickAtack() * ((double)enemy.getMagickArmor() / 100)) + " маг. урона");
                     enemy.setHealth(enemy.getHealth() - (int)(hero5.getMagickAtack() - (double)hero5.getMagickAtack() * ((double)enemy.getMagickArmor() / 100)));
                 } else if (hero5.getAttack() == 1){
-                    infoFightTextView.append("Вы нанесли врагу: " + hero5.getPhysickAtack());
+                    infoFightTextView.append("Вы нанесли врагу: " + hero5.getPhysickAtack() + " физ. урона");
                     enemy.setHealth(enemy.getHealth() - hero5.getPhysickAtack());
                 }
                 break;

@@ -25,6 +25,61 @@ public class Hero implements Serializable {
 
     private int attack = 0;
     private int armor = 0;
+    private int firstCell = 0;
+    private int secondCell = 0;
+    private int thirdCell = 0;
+    private int fourthCell = 0;
+    private int fifthCell = 0;
+    private int selectCell = 0;
+
+    public int getSelectCell() {
+        return selectCell;
+    }
+
+    public void setSelectCell(int selectCell) {
+        this.selectCell = selectCell;
+    }
+
+    public int getFirstCell() {
+        return firstCell;
+    }
+
+    public void setFirstCell(int firstCell) {
+        this.firstCell = firstCell;
+    }
+
+    public int getSecondCell() {
+        return secondCell;
+    }
+
+    public void setSecondCell(int secondCell) {
+        this.secondCell = secondCell;
+    }
+
+    public int getThirdCell() {
+        return thirdCell;
+    }
+
+    public void setThirdCell(int thirdCell) {
+        this.thirdCell = thirdCell;
+    }
+
+    public int getFourthCell() {
+        return fourthCell;
+    }
+
+    public void setFourthCell(int fourthCell) {
+        this.fourthCell = fourthCell;
+    }
+
+    public int getFifthCell() {
+        return fifthCell;
+    }
+
+    public void setFifthCell(int fifthCell) {
+        this.fifthCell = fifthCell;
+    }
+
     public int getMaxhealth() {
         return maxhealth;
     }

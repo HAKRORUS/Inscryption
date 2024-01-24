@@ -12,10 +12,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/fon" />
 
     <TextView
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:text="@string/hiBackpack"
         android:textColor="#FFFFFF"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,63 +32,78 @@
         app:layout_constraintVertical_bias="0.04" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="94dp"
-        android:layout_height="104dp"
+        android:id="@+id/firstButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:clickable="false"
+        android:onClick="first"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.334"
+        app:layout_constraintHorizontal_bias="0.189"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.195"
+        app:layout_constraintVertical_bias="0.204"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="105dp"
-        android:layout_height="103dp"
+        android:id="@+id/secondButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:clickable="false"
+        android:onClick="second"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.194"
+        app:layout_constraintVertical_bias="0.192"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="117dp"
-        android:layout_height="133dp"
+        android:id="@+id/fourthButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:clickable="false"
+        android:onClick="fourth"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintHorizontal_bias="0.189"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.651"
+        app:layout_constraintVertical_bias="0.858"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="139dp"
-        android:layout_height="143dp"
+        android:id="@+id/fifthButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:clickable="false"
+        android:onClick="fifth"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintHorizontal_bias="0.827"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.675"
+        app:layout_constraintVertical_bias="0.858"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="138dp"
-        android:layout_height="154dp"
+        android:id="@+id/thirdButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:clickable="false"
+        android:onClick="third"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.856"
+        app:layout_constraintHorizontal_bias="0.827"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.704"
+        app:layout_constraintVertical_bias="0.192"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <Button
@@ -103,4 +118,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.955" />
+
+    <Button
+        android:id="@+id/useButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:onClick="use"
+        android:text="использовать."
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.592" />
 </androidx.constraintlayout.widget.ConstraintLayout>

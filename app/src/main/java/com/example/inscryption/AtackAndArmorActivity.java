@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 public class AtackAndArmorActivity extends AppCompatActivity {
@@ -17,6 +18,7 @@ public class AtackAndArmorActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_atack_and_armor);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         hero6 = (Hero) getIntent().getSerializableExtra("hero");
         enemy2 = (Enemy) getIntent().getSerializableExtra("enemy");
