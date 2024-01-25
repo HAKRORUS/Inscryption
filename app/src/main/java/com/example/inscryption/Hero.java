@@ -31,6 +31,15 @@ public class Hero implements Serializable {
     private int fourthCell = 0;
     private int fifthCell = 0;
     private int selectCell = 0;
+    private boolean last = false;
+
+    public boolean isLast() {
+        return last;
+    }
+
+    public void setLast(boolean last) {
+        this.last = last;
+    }
 
     public int getSelectCell() {
         return selectCell;

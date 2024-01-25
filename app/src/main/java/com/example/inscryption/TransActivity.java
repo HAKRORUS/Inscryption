@@ -48,9 +48,27 @@ public class TransActivity extends AppCompatActivity {
                 hero4.setMaxhealth(hero4.getMaxhealth() + hero4.getMaxhealth() / 10);
                 hero4.setHealth(hero4.getHealth() + hero4.getHealth() / 10);
                 break;
-
         }
+        imageObject.setVisibility(View.VISIBLE);
         int random = (int) (Math.random() * 4 + 1);
+            switch (random) {
+                case 1:
+                    imageObject.setImageResource(R.drawable.knife);
+                    aboutObjectTextView.setText(R.string.knife);
+                    break;
+                case 2:
+                    imageObject.setImageResource(R.drawable.magickink);
+                    aboutObjectTextView.setText(R.string.magickInk);
+                    break;
+                case 3:
+                    imageObject.setImageResource(R.drawable.pig);
+                    aboutObjectTextView.setText(R.string.pig);
+                    break;
+                case 4:
+                    imageObject.setImageResource(R.drawable.slime);
+                    aboutObjectTextView.setText(R.string.slime);
+                    break;
+            }
         if (hero4.getFirstCell() != 0) {
             if (hero4.getSecondCell() != 0) {
                 if (hero4.getThirdCell() != 0) {
@@ -73,29 +91,8 @@ public class TransActivity extends AppCompatActivity {
         } else {
             hero4.setFirstCell(random);
         }
-        if (hero4.getFirstCell() != 0 && hero4.getSecondCell() != 0 && hero4.getThirdCell() != 0 && hero4.getFourthCell() != 0 && hero4.getFifthCell() != 0) {
-        } else {
-            imageObject.setVisibility(View.VISIBLE);
-            switch (random) {
-                case 1:
-                    imageObject.setImageResource(R.drawable.knife);
-                    aboutObjectTextView.setText(R.string.knife);
-                    break;
-                case 2:
-                    imageObject.setImageResource(R.drawable.magickink);
-                    aboutObjectTextView.setText(R.string.magickInk);
-                    break;
-                case 3:
-                    imageObject.setImageResource(R.drawable.pig);
-                    aboutObjectTextView.setText(R.string.pig);
-                    break;
-                case 4:
-                    imageObject.setImageResource(R.drawable.slime);
-                    aboutObjectTextView.setText(R.string.slime);
-                    break;
-            }
         }
-    }
+
 
     public void toFight(View view) {
         hero4.setNumberOfLevel(hero4.getNumberOfLevel()+1);

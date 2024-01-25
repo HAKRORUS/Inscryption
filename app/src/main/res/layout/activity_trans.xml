@@ -58,6 +58,7 @@
         android:id="@+id/aboutObjectTextView"
         android:layout_width="504dp"
         android:layout_height="30dp"
+        android:gravity="center"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

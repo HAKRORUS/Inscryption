@@ -97,7 +97,7 @@ public class BackpackActivity extends AppCompatActivity {
         switch (hero3.getThirdCell()) {
             case 0:
                 thirdButton.setVisibility(View.INVISIBLE);
-                firstButton.setClickable(false);
+                thirdButton.setClickable(false);
                 break;
             case 1:
                 thirdButton.setImageResource(R.drawable.knife);
@@ -189,7 +189,260 @@ public class BackpackActivity extends AppCompatActivity {
     }
 
     public void use(View view) {
-
+        useButton.setVisibility(View.INVISIBLE);
+        useButton.setClickable(false);
+        switch (hero3.getSelectCell()) {
+            case 1:
+                switch (hero3.getFirstCell()) {
+                    case 1:
+                        hiTextView.setText(R.string.damageAded);
+                        hiTextView.append((int)(30 - (30 * ((double)enemy1.getPhysickArmor() / 100))) + " ед. физ. урона");
+                        enemy1.setHealth(enemy1.getHealth() - (int)(30 - (30 * ((double)enemy1.getPhysickArmor() / 100))));
+                        break;
+                    case 2:
+                        hiTextView.setText(R.string.damageAded);
+                        hiTextView.append((int)(30 - (30 * ((double)enemy1.getMagickArmor() / 100))) + " ед. маг. урона");
+                        enemy1.setHealth(enemy1.getHealth() - (int)(30 - (30 * ((double)enemy1.getMagickArmor() / 100))));
+                        break;
+                    case 3:
+                        hero3.setHealth(hero3.getHealth() + 30);
+                        if (hero3.getHealth() > hero3.getMaxhealth()) {
+                            hero3.setHealth(hero3.getMaxhealth());
+                        }
+                        break;
+                    case 4:
+                        switch ((int) (Math.random() * 5 + 1)) {
+                            case 1:
+                                hiTextView.setText(R.string.slimePAt);
+                                hero3.setPhysickAtack(hero3.getPhysickAtack() + hero3.getPhysickAtack() / 10);
+                                break;
+                            case 2:
+                                hiTextView.setText(R.string.slimePAr);
+                                hero3.setPhysickArmor(hero3.getPhysickArmor() + hero3.getPhysickArmor() / 10);
+                                break;
+                            case 3:
+                                hiTextView.setText(R.string.slimeMAt);
+                                hero3.setMagickAtack(hero3.getMagickAtack() + hero3.getMagickAtack() / 10);
+                                break;
+                            case 4:
+                                hiTextView.setText(R.string.slimeMAr);
+                                hero3.setMagickArmor(hero3.getMagickArmor() + hero3.getMagickArmor() / 10);
+                                break;
+                            case 5:
+                                hiTextView.setText(R.string.slimeHP);
+                                hero3.setMaxhealth(hero3.getMaxhealth() + hero3.getMaxhealth() / 10);
+                                hero3.setHealth(hero3.getHealth() + hero3.getHealth() / 10);
+                                break;
+                        }
+                }
+                First();
+                hero3.setFirstCell(0);
+                break;
+            case 2:
+                switch (hero3.getSecondCell()) {
+                    case 1:
+                        hiTextView.setText(R.string.damageAded);
+                        hiTextView.append((int)(30 - (30 * ((double)enemy1.getPhysickArmor() / 100))) + " ед. физ. урона");
+                        enemy1.setHealth(enemy1.getHealth() - (int)(30 - (30 * ((double)enemy1.getPhysickArmor() / 100))));
+                        break;
+                    case 2:
+                        hiTextView.setText(R.string.damageAded);
+                        hiTextView.append((int)(30 - (30 * ((double)enemy1.getMagickArmor() / 100))) + " ед. маг. урона");
+                        enemy1.setHealth(enemy1.getHealth() - (int)(30 - (30 * ((double)enemy1.getMagickArmor() / 100))));
+                        break;
+                    case 3:
+                        hero3.setHealth(hero3.getHealth() + 30);
+                        if (hero3.getHealth() > hero3.getMaxhealth()) {
+                            hero3.setHealth(hero3.getMaxhealth());
+                        }
+                        break;
+                    case 4:
+                        switch ((int) (Math.random() * 5 + 1)) {
+                            case 1:
+                                hiTextView.setText(R.string.slimePAt);
+                                hero3.setPhysickAtack(hero3.getPhysickAtack() + hero3.getPhysickAtack() / 10);
+                                break;
+                            case 2:
+                                hiTextView.setText(R.string.slimePAr);
+                                hero3.setPhysickArmor(hero3.getPhysickArmor() + hero3.getPhysickArmor() / 10);
+                                break;
+                            case 3:
+                                hiTextView.setText(R.string.slimeMAt);
+                                hero3.setMagickAtack(hero3.getMagickAtack() + hero3.getMagickAtack() / 10);
+                                break;
+                            case 4:
+                                hiTextView.setText(R.string.slimeMAr);
+                                hero3.setMagickArmor(hero3.getMagickArmor() + hero3.getMagickArmor() / 10);
+                                break;
+                            case 5:
+                                hiTextView.setText(R.string.slimeHP);
+                                hero3.setMaxhealth(hero3.getMaxhealth() + hero3.getMaxhealth() / 10);
+                                hero3.setHealth(hero3.getHealth() + hero3.getHealth() / 10);
+                                break;
+                        }
+                }
+                hero3.setSecondCell(0);
+                Second();
+                break;
+            case 3:
+                switch (hero3.getThirdCell()) {
+                    case 1:
+                        hiTextView.setText(R.string.damageAded);
+                        hiTextView.append((int)(30 - (30 * ((double)enemy1.getPhysickArmor() / 100))) + " ед. физ. урона");
+                        enemy1.setHealth(enemy1.getHealth() - (int)(30 - (30 * ((double)enemy1.getPhysickArmor() / 100))));
+                        break;
+                    case 2:
+                        hiTextView.setText(R.string.damageAded);
+                        hiTextView.append((int)(30 - (30 * ((double)enemy1.getMagickArmor() / 100))) + " ед. маг. урона");
+                        enemy1.setHealth(enemy1.getHealth() - (int)(30 - (30 * ((double)enemy1.getMagickArmor() / 100))));
+                        break;
+                    case 3:
+                        hero3.setHealth(hero3.getHealth() + 30);
+                        if (hero3.getHealth() > hero3.getMaxhealth()) {
+                            hero3.setHealth(hero3.getMaxhealth());
+                        }
+                        break;
+                    case 4:
+                        switch ((int) (Math.random() * 5 + 1)) {
+                            case 1:
+                                hiTextView.setText(R.string.slimePAt);
+                                hero3.setPhysickAtack(hero3.getPhysickAtack() + hero3.getPhysickAtack() / 10);
+                                break;
+                            case 2:
+                                hiTextView.setText(R.string.slimePAr);
+                                hero3.setPhysickArmor(hero3.getPhysickArmor() + hero3.getPhysickArmor() / 10);
+                                break;
+                            case 3:
+                                hiTextView.setText(R.string.slimeMAt);
+                                hero3.setMagickAtack(hero3.getMagickAtack() + hero3.getMagickAtack() / 10);
+                                break;
+                            case 4:
+                                hiTextView.setText(R.string.slimeMAr);
+                                hero3.setMagickArmor(hero3.getMagickArmor() + hero3.getMagickArmor() / 10);
+                                break;
+                            case 5:
+                                hiTextView.setText(R.string.slimeHP);
+                                hero3.setMaxhealth(hero3.getMaxhealth() + hero3.getMaxhealth() / 10);
+                                hero3.setHealth(hero3.getHealth() + hero3.getHealth() / 10);
+                                break;
+                        }
+                }
+                hero3.setThirdCell(0);
+                Third();
+                break;
+            case 4:
+                switch (hero3.getFourthCell()) {
+                    case 1:
+                        hiTextView.setText(R.string.damageAded);
+                        hiTextView.append((int)(30 - (30 * ((double)enemy1.getPhysickArmor() / 100))) + " ед. физ. урона");
+                        enemy1.setHealth(enemy1.getHealth() - (int)(30 - (30 * ((double)enemy1.getPhysickArmor() / 100))));
+                        break;
+                    case 2:
+                        hiTextView.setText(R.string.damageAded);
+                        hiTextView.append((int)(30 - (30 * ((double)enemy1.getMagickArmor() / 100))) + " ед. маг. урона");
+                        enemy1.setHealth(enemy1.getHealth() - (int)(30 - (30 * ((double)enemy1.getMagickArmor() / 100))));
+                        break;
+                    case 3:
+                        hero3.setHealth(hero3.getHealth() + 30);
+                        if (hero3.getHealth() > hero3.getMaxhealth()) {
+                            hero3.setHealth(hero3.getMaxhealth());
+                        }
+                        break;
+                    case 4:
+                        switch ((int) (Math.random() * 5 + 1)) {
+                            case 1:
+                                hiTextView.setText(R.string.slimePAt);
+                                hero3.setPhysickAtack(hero3.getPhysickAtack() + hero3.getPhysickAtack() / 10);
+                                break;
+                            case 2:
+                                hiTextView.setText(R.string.slimePAr);
+                                hero3.setPhysickArmor(hero3.getPhysickArmor() + hero3.getPhysickArmor() / 10);
+                                break;
+                            case 3:
+                                hiTextView.setText(R.string.slimeMAt);
+                                hero3.setMagickAtack(hero3.getMagickAtack() + hero3.getMagickAtack() / 10);
+                                break;
+                            case 4:
+                                hiTextView.setText(R.string.slimeMAr);
+                                hero3.setMagickArmor(hero3.getMagickArmor() + hero3.getMagickArmor() / 10);
+                                break;
+                            case 5:
+                                hiTextView.setText(R.string.slimeHP);
+                                hero3.setMaxhealth(hero3.getMaxhealth() + hero3.getMaxhealth() / 10);
+                                hero3.setHealth(hero3.getHealth() + hero3.getHealth() / 10);
+                                break;
+                        }
+                }
+                hero3.setFourthCell(0);
+                Fourth();
+                break;
+            case 5:
+                switch (hero3.getFifthCell()) {
+                    case 1:
+                        hiTextView.setText(R.string.damageAded);
+                        hiTextView.append((int)(30 - (30 * ((double)enemy1.getPhysickArmor() / 100))) + " ед. физ. урона");
+                        enemy1.setHealth(enemy1.getHealth() - (int)(30 - (30 * ((double)enemy1.getPhysickArmor() / 100))));
+                        break;
+                    case 2:
+                        hiTextView.setText(R.string.damageAded);
+                        hiTextView.append((int)(30 - (30 * ((double)enemy1.getMagickArmor() / 100))) + " ед. маг. урона");
+                        enemy1.setHealth(enemy1.getHealth() - (int)(30 - (30 * ((double)enemy1.getMagickArmor() / 100))));
+                        break;
+                    case 3:
+                        hero3.setHealth(hero3.getHealth() + 30);
+                        if (hero3.getHealth() > hero3.getMaxhealth()) {
+                            hero3.setHealth(hero3.getMaxhealth());
+                        }
+                        break;
+                    case 4:
+                        switch ((int) (Math.random() * 5 + 1)) {
+                            case 1:
+                                hiTextView.setText(R.string.slimePAt);
+                                hero3.setPhysickAtack(hero3.getPhysickAtack() + hero3.getPhysickAtack() / 10);
+                                break;
+                            case 2:
+                                hiTextView.setText(R.string.slimePAr);
+                                hero3.setPhysickArmor(hero3.getPhysickArmor() + hero3.getPhysickArmor() / 10);
+                                break;
+                            case 3:
+                                hiTextView.setText(R.string.slimeMAt);
+                                hero3.setMagickAtack(hero3.getMagickAtack() + hero3.getMagickAtack() / 10);
+                                break;
+                            case 4:
+                                hiTextView.setText(R.string.slimeMAr);
+                                hero3.setMagickArmor(hero3.getMagickArmor() + hero3.getMagickArmor() / 10);
+                                break;
+                            case 5:
+                                hiTextView.setText(R.string.slimeHP);
+                                hero3.setMaxhealth(hero3.getMaxhealth() + hero3.getMaxhealth() / 10);
+                                hero3.setHealth(hero3.getHealth() + hero3.getHealth() / 10);
+                                break;
+                        }
+                }
+                hero3.setFifthCell(0);
+                Fifth();
+                break;
+        }
+    }
+    public void First() {
+        firstButton.setClickable(false);
+        firstButton.setVisibility(View.INVISIBLE);
+    }
+    public void Second() {
+        secondButton.setClickable(false);
+        secondButton.setVisibility(View.INVISIBLE);
+    }
+    public void Third() {
+        thirdButton.setClickable(false);
+        thirdButton.setVisibility(View.INVISIBLE);
+    }
+    public void Fourth() {
+        fourthButton.setClickable(false);
+        fourthButton.setVisibility(View.INVISIBLE);
+    }
+    public void Fifth() {
+        fifthButton.setClickable(false);
+        fifthButton.setVisibility(View.INVISIBLE);
     }
 
     public void first(View view) {

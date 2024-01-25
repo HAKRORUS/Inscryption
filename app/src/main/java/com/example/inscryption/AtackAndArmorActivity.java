@@ -48,7 +48,7 @@ public class AtackAndArmorActivity extends AppCompatActivity {
                 armorTextView.append(hero6.getMagickArmor() + "% маг. урона.");
                 break;
             default:
-                atackTextView.setText("");
+                armorTextView.setText("");
                 break;
         }
     }

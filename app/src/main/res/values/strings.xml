@@ -31,8 +31,20 @@
     <string name="choosenPhysickArmor">Ты выбрал физ. защиту она спасет от: </string>
     <string name="choosenMagickArmor">Ты выбрал маг. защиту она спасет от: </string>
     <string name="fullCell">Ты не можешь взять больше.</string>
+    <string name="damageAded">Вы нанесли противнику:</string>
+    <string name="last">Наконец, враг упал. Все позади? </string>
+
     <string name="knife">Наносит противнику 30 ед. физ. урона.</string>
+
     <string name="magickInk">Наносит противнику 30 ед. маг. урона.</string>
+
     <string name="pig">Восполняет 30 ед. здоровья.</string>
+    <string name="pigAded">Вы восполняет 30 ед. здоровья.</string>
+
     <string name="slime">повышает случайную характеристику на 10%.</string>
+    <string name="slimePAt">Ты получил усиление физ.атаки на 10%</string>
+    <string name="slimePAr">Ты получил усиление физ.защиты на 10%</string>
+    <string name="slimeMAt">Ты получил усиление маг.атаки на 10%</string>
+    <string name="slimeMAr">Ты получил усиление маг.защиты на 10%</string>
+    <string name="slimeHP">Ты получил усиление здоровья на 10%</string>
 </resources>
