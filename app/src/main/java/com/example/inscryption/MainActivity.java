@@ -20,9 +20,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        mediaPlayer = MediaPlayer.create(this,R.raw.fon);
-        mediaPlayer.start();
-        mediaPlayer.setLooping(true);
+
+        hero.Fon(this,R.raw.fon);
 
         nameEditText = findViewById(R.id.nameEditText);
 
@@ -39,5 +38,16 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("hero", hero);
             startActivity(intent);
         }
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        moveTaskToBack(true);
+    }
+    @Override
+    public void onDestroy()
+    {
+        mediaPlayer.stop();
+        super.onDestroy();
     }
 }

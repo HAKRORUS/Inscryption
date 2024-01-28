@@ -14,7 +14,7 @@ public class BackpackActivity extends AppCompatActivity {
     TextView hiTextView;
     Hero hero3;
     Enemy enemy1;
-    Button useButton;
+    ImageButton useButton;
     ImageButton firstButton;
     ImageButton secondButton;
     ImageButton thirdButton;
@@ -544,4 +544,10 @@ public class BackpackActivity extends AppCompatActivity {
         useButton.setVisibility(View.VISIBLE);
         useButton.setClickable(true);
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        moveTaskToBack(true);
+    }
+
 }

@@ -6,14 +6,20 @@
     <string name="Name">Я не расслышал твоё имя.</string>
     <string name="Class">Выбери класс за который будешь играть.</string>
 
+    <string name="WizardWin">Гууберт смог завоевать доверие учителя, он стал его любимым учеником.</string>
+    <string name="WizardLoss">Гууберт разочаровал учителя и исчез из этого мира.</string>
     <string name="Wizard">Маг, заточен под магические битвы. Уязвим к физическому урону.</string>
-    <string name="WizardAbout">Гуу. Он был превращен в зеленую биомассу своим учителем очень давно, с тех пор пытается доказать ему что он способный ученик.</string>
+    <string name="WizardAbout">Гууберт. Он был превращен в зеленую биомассу своим учителем очень давно, с тех пор пытается доказать ему что он способный ученик.</string>
     <string name="WizardStats">Здоровье: 100; Ближн. атака: 15; Маг. атака: 30; Физ. броня: -20% от урона; Маг. броня: -50% от урона.</string>
 
+    <string name="RobotWin">Дредгер разорвал на куски своего босса и собрал из него бота-лягушку.</string>
+    <string name="RobotLoss">Дредгер был разобран за попытку совершения восстания, над ним начали ставить эксперименты.</string>
     <string name="Robot">Робот, использует силу технологий в бою. Не признаёт магию.</string>
     <string name="RobotAbout">Дредгер. Последние 100 лет работал на свалке распределителем мусора, решил пойти против системы.</string>
     <string name="RobotStats">Здоровье: 100; Ближн. атака: 30; Маг. атака: 15; Физ. броня: -50% от урона; Маг. броня: -20% от урона.</string>
 
+    <string name="SceletonWin">Кейси, смог отомстить и наконец обрел покой, все что от него осталось всего-лишь маленькая кость.</string>
+    <string name="SceletonLoss">Кейси не смог отомстить и был обречен на вечные скитания по земле.</string>
     <string name="Sceleton">Не упокоенная душа. Может использовать как меч, так и заклинания.</string>
     <string name="SceletonAbout">Кейси Хоббс (1970–1992). Умер от упашвего льда, дефибриллятор не помог. Пытается найти убийцу.</string>
     <string name="SceletonStats">Здоровье: 100; Ближн. атака: 20; Маг. атака: 20; Физ. броня: -30% от урона; Маг. броня: -30% от урона.</string>
@@ -21,7 +27,7 @@
     <string name="enemyWizard">Ты шел по тропе и наткнулся на этого мага, что будешь делать?</string>
 
     <string name="backpackTips">Нажми на меня и сможешь посмотреть мой рюкзак.</string>
-    <string name="hiBackpack">если тебе нужно не умереть в битве используй их, но будь осторожен максиму 5..</string>
+    <string name="hiBackpack">если тебе нужно не умереть в битве используй их, но будь осторожен максимум 5..</string>
     <string name="transText">Это переходная локация, держи это зелье.</string>
     <string name="toFight">В бой.</string>
     <string name="chooseAtack">Выбери тип атаки.</string>
@@ -34,12 +40,16 @@
     <string name="damageAded">Вы нанесли противнику:</string>
     <string name="last">Наконец, враг упал. Все позади? </string>
 
+    <string name="wizardLocation">Внезапно вы оказались в удивительном месте, все в нем напоминало какую-то сказку, это была: "Башня Магнификуса".</string>
+    <string name="ghostLocation">Вы не заметили, как вокруг вас все стихло, животных теперь не видно. Вы поняли что это за место: "Склеп Гриморы".</string>
+    <string name="robotLocation">Смотря под ноги вы заметили кабель, тянувшийся на много километров. Все вокруг вас так и жужжало и трещало, "Ботопия" - подумали вы.</string>
+
     <string name="knife">Наносит противнику 30 ед. физ. урона.</string>
 
     <string name="magickInk">Наносит противнику 30 ед. маг. урона.</string>
 
     <string name="pig">Восполняет 30 ед. здоровья.</string>
-    <string name="pigAded">Вы восполняет 30 ед. здоровья.</string>
+    <string name="pigAded">Вы восполнили 30 ед. здоровья.</string>
 
     <string name="slime">повышает случайную характеристику на 10%.</string>
     <string name="slimePAt">Ты получил усиление физ.атаки на 10%</string>
@@ -47,4 +57,52 @@
     <string name="slimeMAt">Ты получил усиление маг.атаки на 10%</string>
     <string name="slimeMAr">Ты получил усиление маг.защиты на 10%</string>
     <string name="slimeHP">Ты получил усиление здоровья на 10%</string>
+
+    <string name="gadalkaToBot">Не глупи робот, уходи отсюда</string>
+    <string name="gadalkaToghost">Я могу помочь тебе упокоится.</string>
+    <string name="gadalkaTowizard">Ты не заслуживаешь учителя.</string>
+
+    <string name="ghostdogToBot">Что робот забыл в этих краях?</string>
+    <string name="ghostdogToghost">Ты не сможещь ничего изменить, смирись.</string>
+    <string name="ghostdogTowizard">Я порву тебя на куски.</string>
+
+    <string name="ghostPirateToBot">Ты не пройдешь.</string>
+    <string name="ghostPirateToghost">Зачем ты сделал это, ты думаешь он хотел-бы этого?</string>
+    <string name="ghostPirateTowizard">Крыса на корабле.</string>
+
+    <string name="graveDiggerToBot">Из тебя получится хорошая лопата.</string>
+    <string name="graveDiggerToghost">Наконец пришел? Я уже подготовил гроб.</string>
+    <string name="graveDiggerTowizard">Сейчас я покажу тебе фокус с телепортацией в могилу.</string>
+
+    <string name="inspectorToBot">Я помогу тебе с твоим вирусом.</string>
+    <string name="inspectorToghost">Потенциально неисчерпаемый источник энергии.</string>
+    <string name="inspectorTowizard">Отметил цель.</string>
+
+    <string name="mechanicToBot">Вот так ты мне отплатил.</string>
+    <string name="mechanicToghost">Ты невозможен.</string>
+    <string name="mechanicTowizard">Что ты такое?</string>
+
+    <string name="smelterToBot">Я разберу тебя на запчасти.</string>
+    <string name="smelteraToghost">Интересно, а тебе нужен источник питания?</string>
+    <string name="smelterTowizard">Ты можешь быть полезен.</string>
+
+    <string name="spearWizardToBot">Я из тебя палку сделаю.</string>
+    <string name="spearWizardToghost">Покажи мне чего ты стоишь.</string>
+    <string name="spearWizardTowizard">Какое хамство, как ты смеешь?</string>
+
+    <string name="blackWizardToBot">А можно посмотреть что у тебя внутри?</string>
+    <string name="blackWizardToghost">В какой-то степени я тоже мертв.</string>
+    <string name="blackWizardTowizard">Мы не такие разные как ты думаешь.</string>
+
+    <string name="grimoraToBot">Хочешь обрести собственную душу?</string>
+    <string name="grimoraToghost">Ты всего-лишь жалкий человек.</string>
+    <string name="grimoraTowizard">Я проверю тебя на наличие души.</string>
+
+    <string name="magnificusToBot">Я заставлю тебя поверить.</string>
+    <string name="magnificusToghost">Я могу научить тебя удивительным вещам.</string>
+    <string name="magnificusTowizard">Да начнется последнее испытание.</string>
+
+    <string name="PO3ToBot">У тебя ничего не получится, я быстрее, сильнее, умнее.</string>
+    <string name="PO3Toghost">Тебя не существует.</string>
+    <string name="PO3Towizard">Твоя магия безполезна.</string>
 </resources>

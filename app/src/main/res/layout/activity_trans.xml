@@ -7,9 +7,9 @@
     tools:context=".TransActivity">
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/fonImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -20,27 +20,15 @@
 
     <TextView
         android:id="@+id/transTextView"
-        android:layout_width="371dp"
-        android:layout_height="75dp"
+        android:layout_width="119dp"
+        android:layout_height="131dp"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.196"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.043" />
-
-    <Button
-        android:id="@+id/fightButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="toFight"
-        android:text="@string/toFight"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.851" />
+        app:layout_constraintVertical_bias="0.375" />
 
     <ImageView
         android:id="@+id/imageObject"
@@ -56,14 +44,39 @@
 
     <TextView
         android:id="@+id/aboutObjectTextView"
-        android:layout_width="504dp"
-        android:layout_height="30dp"
-        android:gravity="center"
+        android:layout_width="118dp"
+        android:layout_height="132dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376" />
+
+    <TextView
+        android:id="@+id/aboutLocationTextView"
+        android:layout_width="554dp"
+        android:layout_height="54dp"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.669" />
+        app:layout_constraintVertical_bias="0.773" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="97dp"
+        android:layout_height="99dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="toFight"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/go" />
 </androidx.constraintlayout.widget.ConstraintLayout>

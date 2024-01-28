@@ -51,4 +51,15 @@ public class HiMainActivity extends AppCompatActivity {
         intent.putExtra("hero", hero2);
         startActivity(intent);
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        moveTaskToBack(true);
+    }
+    @Override
+    public void onDestroy()
+    {
+        hero2.StopFon();
+        super.onDestroy();
+    }
 }

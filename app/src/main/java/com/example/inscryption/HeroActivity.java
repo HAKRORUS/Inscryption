@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class HeroActivity extends AppCompatActivity {
@@ -14,7 +15,7 @@ public class HeroActivity extends AppCompatActivity {
     TextView heroTextView;
     TextView heroAboutTextView;
     TextView heroStatsTextView;
-    Button chooseButton;
+    ImageButton chooseButton;
 
     Hero hero1;
 
@@ -68,23 +69,58 @@ public class HeroActivity extends AppCompatActivity {
                 hero1.setPhysickArmor(50);
                 hero1.setMagickAtack(15);
                 hero1.setMagickArmor(20);
+                switch ((int)(Math.random()*2+1)) {
+                    case 1:
+                        hero1.setLevels(12);
+                        break;
+                    case 2:
+                        hero1.setLevels(21);
+                        break;
+                }
                 break;
             case 2:
                 hero1.setPhysickAtack(20);
                 hero1.setPhysickArmor(30);
                 hero1.setMagickAtack(20);
                 hero1.setMagickArmor(30);
+                switch ((int)(Math.random()*2+1)) {
+                    case 1:
+                        hero1.setLevels(23);
+                        break;
+                    case 2:
+                        hero1.setLevels(32);
+                        break;
+                }
                 break;
             case  3:
                 hero1.setPhysickAtack(15);
                 hero1.setPhysickArmor(20);
                 hero1.setMagickAtack(30);
                 hero1.setMagickArmor(50);
+                switch ((int)(Math.random()*2+1)) {
+                    case 1:
+                        hero1.setLevels(13);
+                        break;
+                    case 2:
+                        hero1.setLevels(31);
+                        break;
+                }
                 break;
         }
 
         Intent intent = new Intent(this,HiMainActivity.class);
         intent.putExtra("hero",hero1);
         startActivity(intent);
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        moveTaskToBack(true);
+    }
+    @Override
+    public void onDestroy()
+    {
+        hero1.StopFon();
+        super.onDestroy();
     }
 }

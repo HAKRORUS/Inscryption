@@ -1,5 +1,7 @@
 package com.example.inscryption;
 
+import android.content.Context;
+import android.media.MediaPlayer;
 import android.text.Editable;
 
 import java.io.Serializable;
@@ -32,6 +34,34 @@ public class Hero implements Serializable {
     private int fifthCell = 0;
     private int selectCell = 0;
     private boolean last = false;
+    private int levels;
+    static MediaPlayer fon;
+    private boolean is1Fon = true;
+    public static void Fon(Context ctx, int raw_id){
+        fon = MediaPlayer.create(ctx, raw_id);
+        fon.start();
+        fon.setLooping(true);
+    }
+
+    public boolean isIs1Fon() {
+        return is1Fon;
+    }
+
+    public void setIs1Fon(boolean is1Fon) {
+        this.is1Fon = is1Fon;
+    }
+
+    public void StopFon(){
+        fon.stop();
+    }
+
+    public int getLevels() {
+        return levels;
+    }
+
+    public void setLevels(int levels) {
+        this.levels = levels;
+    }
 
     public boolean isLast() {
         return last;

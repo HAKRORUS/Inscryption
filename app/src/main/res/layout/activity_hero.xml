@@ -98,20 +98,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.677" />
 
-    <Button
-        android:id="@+id/chooseButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
-        android:onClick="choose"
-        android:text="Выбрать"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.955" />
-
     <TextView
         android:id="@+id/statsTextView"
         android:layout_width="528dp"
@@ -124,5 +110,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.752" />
+
+    <ImageButton
+        android:id="@+id/chooseButton"
+        android:layout_width="59dp"
+        android:layout_height="78dp"
+        android:background="#00FFFFFF"
+        android:onClick="choose"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/go" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

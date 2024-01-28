@@ -85,4 +85,16 @@ public class AtackAndArmorActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        moveTaskToBack(true);
+    }
+    @Override
+    public void onDestroy()
+    {
+        hero6.StopFon();
+        super.onDestroy();
+    }
+
 }

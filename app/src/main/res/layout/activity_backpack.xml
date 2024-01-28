@@ -111,30 +111,33 @@
         app:layout_constraintVertical_bias="0.192"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
-    <Button
+    <ImageButton
         android:id="@+id/backButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="65dp"
+        android:layout_height="91dp"
+        android:background="#00FFFFFF"
         android:onClick="Back"
-        android:text="назад"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.955" />
+        app:layout_constraintVertical_bias="0.915"
+        app:srcCompat="@drawable/exit" />
 
-    <Button
+    <ImageButton
         android:id="@+id/useButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="false"
+        android:layout_width="127dp"
+        android:layout_height="51dp"
+        android:background="#00FFFFFF"
         android:onClick="use"
-        android:text="использовать."
+        android:scaleType="fitXY"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.592" />
+        app:layout_constraintVertical_bias="0.591"
+        app:srcCompat="@drawable/use" />
 </androidx.constraintlayout.widget.ConstraintLayout>

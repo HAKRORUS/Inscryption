@@ -13,9 +13,17 @@
         android:theme="@style/Theme.Inscryption"
         tools:targetApi="31">
         <activity
-            android:name=".AtackAndArmorActivity"
+            android:name=".WinActivity"
             android:screenOrientation="landscape"
             android:exported="false" />
+        <activity
+            android:name=".OverActivity"
+            android:screenOrientation="landscape"
+            android:exported="false" />
+        <activity
+            android:name=".AtackAndArmorActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".FightActivity"
             android:exported="false"
