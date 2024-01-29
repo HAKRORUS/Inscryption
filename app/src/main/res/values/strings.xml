@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Inscryption</string>
     <string name="hello">Очередной Соискатель, Добро пожаловать в INSCRYPTION.</string>
-    <string name="hint">INSCRYPTION - это игра с линейным сюжетом и пошаговыми боями с монстрами.</string>
+    <string name="hint">INSCRYPTION - это игра с линейным сюжетом и пошаговыми боями с монстрами. (Для лучшего погружения включите звук и используйте наушники)</string>
     <string name="start">Новое приключение</string>
     <string name="Name">Я не расслышал твоё имя.</string>
     <string name="Class">Выбери класс за который будешь играть.</string>
