@@ -38,6 +38,11 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("hero", hero);
             startActivity(intent);
         }
+        if (nameEditText.getText().toString().equals("12345")) {
+            hero.StopFon();
+            Intent intent = new Intent(this,Pashalka.class);
+            startActivity(intent);
+        }
     }
     @Override
     public void onBackPressed() {

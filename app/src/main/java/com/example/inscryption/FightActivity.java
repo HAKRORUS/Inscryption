@@ -860,7 +860,7 @@ public class FightActivity extends AppCompatActivity {
                                 break;
                         }
                         break;
-                    case 6:
+                    case 7:
                         switch ((int)(Math.random() * 2+1)) {
                             case 1:
                                 enemyImageView.setImageResource(R.drawable.gravedigger1);
@@ -1498,5 +1498,4 @@ public class FightActivity extends AppCompatActivity {
         hero5.StopFon();
         super.onDestroy();
     }
-
 }
