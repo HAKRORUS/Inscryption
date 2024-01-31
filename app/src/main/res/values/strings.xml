@@ -26,7 +26,10 @@
 
     <string name="enemyWizard">Ты шел по тропе и наткнулся на этого мага, что будешь делать?</string>
 
-    <string name="backpackTips">Нажми на меня и сможешь посмотреть мой рюкзак.</string>
+    <string name="Tipsss">Это обучение, все просто ты выбираешь атаку и защиту и заканчиваешь ход, если понимаешь что твои силы на исходе используй рюкзак.</string>
+    <string name="TipsBackpack">Здесь будет кнопка чтобы зайти в инвентарь.</string>
+    <string name="TipsChoose">Здесь будет кнопка чтобы выбрать защиту и атаку.</string>
+    <string name="TipsEnd">Здесь будет кнопка чтобы закончить ход.</string>
     <string name="hiBackpack">если тебе нужно не умереть в битве используй их, но будь осторожен максимум 5..</string>
     <string name="transText">Это переходная локация, держи это зелье.</string>
     <string name="toFight">В бой.</string>
@@ -44,14 +47,14 @@
     <string name="ghostLocation">Вы не заметили, как вокруг вас все стихло, животных теперь не видно. Вы поняли что это за место: "Склеп Гриморы".</string>
     <string name="robotLocation">Смотря под ноги вы заметили кабель, тянувшийся на много километров. Все вокруг вас так и жужжало и трещало, "Ботопия" - подумали вы.</string>
 
-    <string name="knife">Наносит противнику 30 ед. физ. урона.</string>
+    <string name="knife">Ритуальный кинжал: наносит противнику 30 ед. физ. урона.</string>
 
-    <string name="magickInk">Наносит противнику 30 ед. маг. урона.</string>
+    <string name="magickInk">Волшебные чернила: наносит противнику 30 ед. маг. урона.</string>
 
-    <string name="pig">Восполняет 30 ед. здоровья.</string>
+    <string name="pig">Свинка-копилка: Восполняет 30 ед. здоровья.</string>
     <string name="pigAded">Вы восполнили 30 ед. здоровья.</string>
 
-    <string name="slime">повышает случайную характеристику на 10%.</string>
+    <string name="slime">Банка с слизью: повышает случайную характеристику на 10%.</string>
     <string name="slimePAt">Ты получил усиление физ.атаки на 10%</string>
     <string name="slimePAr">Ты получил усиление физ.защиты на 10%</string>
     <string name="slimeMAt">Ты получил усиление маг.атаки на 10%</string>

@@ -13,7 +13,6 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class HiMainActivity extends AppCompatActivity {
-    ImageButton backpackTipImageButton;
     Hero hero2;
 
     @Override
@@ -23,28 +22,8 @@ public class HiMainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         hero2 = (Hero) getIntent().getSerializableExtra("hero");
-
-        backpackTipImageButton = findViewById(R.id.backpackTipImageButton);
-
-        switch (hero2.getNumberOfHero()) {
-            case 1:
-                backpackTipImageButton.setImageResource(R.drawable.robot);
-                break;
-            case 2:
-                backpackTipImageButton.setImageResource(R.drawable.sceleton);
-                break;
-            case 3:
-                backpackTipImageButton.setImageResource(R.drawable.wizard);
-                break;
-        }
     }
 
-    public void backpackTip(View view) {
-        Intent intent = new Intent(this, BackpackActivity.class);
-        hero2.setHi(true);
-        intent.putExtra("hero", hero2);
-        startActivity(intent);
-    }
 
     public void start(View view) {
         Intent intent = new Intent(this, TransActivity.class);
@@ -57,8 +36,7 @@ public class HiMainActivity extends AppCompatActivity {
         moveTaskToBack(true);
     }
     @Override
-    public void onDestroy()
-    {
+    public void onDestroy() {
         hero2.StopFon();
         super.onDestroy();
     }
